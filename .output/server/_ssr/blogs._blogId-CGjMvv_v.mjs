@@ -1,4 +1,4 @@
-import { g as Link } from "../_libs/@tanstack/react-router+[...].mjs";
+import { v as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { v as require_jsx_runtime } from "../_libs/@radix-ui/react-accordion+[...].mjs";
 import { H as Calendar, I as Clock, J as ArrowLeft, K as ArrowUpRight, L as CircleCheck, U as Bookmark, f as Share2 } from "../_libs/lucide-react.mjs";
 import { n as Footer, r as Navbar, t as Button } from "./Footer-CeJxoXe3.mjs";

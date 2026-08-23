@@ -1,5 +1,5 @@
 import { n as LOCATIONS, r as findLocation } from "./locations-Dfz4tujt.mjs";
-import { j as notFound, m as createFileRoute, p as lazyRouteComponent } from "../_libs/@tanstack/react-router+[...].mjs";
+import { R as notFound, g as createFileRoute, h as lazyRouteComponent } from "../_libs/@tanstack/react-router+[...].mjs";
 //#region node_modules/.nitro/vite/services/ssr/assets/locations._location-pIVsbyy6.js
 var $$splitComponentImporter = () => import("./locations._location-DEPffzmd.mjs");
 var Route = createFileRoute("/locations/$location")({

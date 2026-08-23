@@ -2,7 +2,7 @@ import { a as __toESM } from "../_runtime.mjs";
 import { o as motion } from "../_libs/framer-motion.mjs";
 import { i as hero_default } from "./locations-Dfz4tujt.mjs";
 import { u as require_react } from "../_libs/@floating-ui/react-dom+[...].mjs";
-import { g as Link } from "../_libs/@tanstack/react-router+[...].mjs";
+import { v as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { v as require_jsx_runtime } from "../_libs/@radix-ui/react-accordion+[...].mjs";
 import { H as Calendar, I as Clock, K as ArrowUpRight, T as Mail, W as BookOpen, b as PenLine, m as Search, u as Sparkles } from "../_libs/lucide-react.mjs";
 import { n as Footer, r as Navbar, t as Button } from "./Footer-CeJxoXe3.mjs";

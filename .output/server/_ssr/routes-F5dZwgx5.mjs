@@ -2,7 +2,7 @@ import { a as __toESM } from "../_runtime.mjs";
 import { a as useScroll, o as motion, r as useTransform } from "../_libs/framer-motion.mjs";
 import { a as program_dance_default, c as program_yoga_default, d as trainer_3_default, i as hero_default, l as trainer_1_default, n as LOCATIONS, o as program_hiit_default, s as program_strength_default } from "./locations-Dfz4tujt.mjs";
 import { u as require_react } from "../_libs/@floating-ui/react-dom+[...].mjs";
-import { g as Link } from "../_libs/@tanstack/react-router+[...].mjs";
+import { v as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { v as require_jsx_runtime } from "../_libs/@radix-ui/react-accordion+[...].mjs";
 import { B as ChevronDown, D as Leaf, G as Award, I as Clock, K as ArrowUpRight, a as Volume2, d as ShieldCheck, i as VolumeX, j as HeartPulse, k as Instagram, o as Users, q as ArrowRight, t as Zap, u as Sparkles, v as Play, w as MapPin, x as Pause } from "../_libs/lucide-react.mjs";
 import { n as Footer, r as Navbar, t as Button } from "./Footer-CeJxoXe3.mjs";

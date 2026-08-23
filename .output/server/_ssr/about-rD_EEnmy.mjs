@@ -1,6 +1,6 @@
 import { o as motion } from "../_libs/framer-motion.mjs";
 import { t as IMAGES } from "./locations-Dfz4tujt.mjs";
-import { g as Link } from "../_libs/@tanstack/react-router+[...].mjs";
+import { v as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { v as require_jsx_runtime } from "../_libs/@radix-ui/react-accordion+[...].mjs";
 import { A as Heart, D as Leaf, G as Award, d as ShieldCheck, o as Users, q as ArrowRight, u as Sparkles } from "../_libs/lucide-react.mjs";
 import { n as Footer, r as Navbar, t as Button } from "./Footer-CeJxoXe3.mjs";
