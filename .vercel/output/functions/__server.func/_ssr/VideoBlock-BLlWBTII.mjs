@@ -1,0 +1,146 @@
+import { o as __toESM } from "../_runtime.mjs";
+import { t as IMAGES } from "./locations-Dfz4tujt.mjs";
+import { u as require_react } from "../_libs/@floating-ui/react-dom+[...].mjs";
+import { v as require_jsx_runtime } from "../_libs/@radix-ui/react-accordion+[...].mjs";
+import { a as Volume2, i as VolumeX, v as Play, x as Pause } from "../_libs/lucide-react.mjs";
+import { a as useScroll, o as motion, r as useTransform } from "../_libs/framer-motion.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/VideoBlock-BLlWBTII.js
+var import_react = /* @__PURE__ */ __toESM(require_react());
+var import_jsx_runtime = require_jsx_runtime();
+var heights = {
+	sm: "min-h-[60vh]",
+	md: "min-h-[75vh]",
+	lg: "min-h-[92vh]"
+};
+/**
+* Reusable cinematic video placeholder.
+* Drop an MP4 at `public/videos/<name>.mp4` and pass `src="/videos/<name>.mp4"`.
+* Until then, the poster (defaults to hero) plays with parallax.
+*/
+function VideoBlock({ src, poster = IMAGES.hero, eyebrow, title, copy, height = "md", align = "center" }) {
+	const containerRef = (0, import_react.useRef)(null);
+	const videoRef = (0, import_react.useRef)(null);
+	const [playing, setPlaying] = (0, import_react.useState)(true);
+	const [muted, setMuted] = (0, import_react.useState)(true);
+	const [errored, setErrored] = (0, import_react.useState)(!src);
+	const { scrollYProgress } = useScroll({
+		target: containerRef,
+		offset: ["start end", "end start"]
+	});
+	const y = useTransform(scrollYProgress, [0, 1], ["-6%", "6%"]);
+	const scale = useTransform(scrollYProgress, [
+		0,
+		.5,
+		1
+	], [
+		1.08,
+		1,
+		1.08
+	]);
+	const toggle = () => {
+		const v = videoRef.current;
+		if (!v) return;
+		if (v.paused) {
+			v.play();
+			setPlaying(true);
+		} else {
+			v.pause();
+			setPlaying(false);
+		}
+	};
+	const toggleMute = () => {
+		const v = videoRef.current;
+		if (!v) return;
+		v.muted = !v.muted;
+		setMuted(v.muted);
+	};
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+		ref: containerRef,
+		className: `relative w-full overflow-hidden bg-foreground ${heights[height]}`,
+		children: [
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.div, {
+				style: {
+					y,
+					scale
+				},
+				className: "absolute inset-0",
+				children: [!errored && src ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("video", {
+					ref: videoRef,
+					className: "h-full w-full object-cover",
+					autoPlay: true,
+					muted: true,
+					loop: true,
+					playsInline: true,
+					poster,
+					onError: () => setErrored(true),
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("source", {
+						src,
+						type: "video/mp4"
+					})
+				}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+					src: poster,
+					alt: "",
+					className: "h-full w-full object-cover"
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+					className: "absolute inset-0",
+					style: { background: "linear-gradient(180deg, oklch(0.20 0.02 20 / 0.55), oklch(0.20 0.02 20 / 0.3) 45%, oklch(0.20 0.02 20 / 0.85))" }
+				})]
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute -top-24 left-1/3 h-72 w-72 rounded-full bg-primary/40 blur-3xl animate-float" }),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute -bottom-24 right-1/4 h-96 w-96 rounded-full bg-accent/25 blur-3xl animate-float [animation-delay:2s]" }),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: `relative z-10 flex ${heights[height]} items-center px-4 sm:px-6 ${align === "left" ? "justify-start" : "justify-center"}`,
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.div, {
+					initial: {
+						opacity: 0,
+						y: 30
+					},
+					whileInView: {
+						opacity: 1,
+						y: 0
+					},
+					viewport: {
+						once: true,
+						amount: .3
+					},
+					transition: { duration: .8 },
+					className: `max-w-3xl text-white ${align === "center" ? "text-center mx-auto" : "text-left"}`,
+					children: [
+						eyebrow && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+							className: "inline-flex items-center gap-2 rounded-full glass-dark px-4 py-1.5 text-xs uppercase tracking-[0.3em]",
+							children: eyebrow
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+							className: "mt-6 font-display text-4xl leading-[1.05] sm:text-6xl lg:text-7xl",
+							children: title
+						}),
+						copy && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							className: "mt-6 text-base text-white/85 sm:text-lg max-w-xl mx-auto",
+							children: copy
+						}),
+						!src && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							className: "mt-4 inline-block rounded-full glass-dark px-3 py-1 text-[10px] uppercase tracking-widest text-white/70",
+							children: "Video placeholder · drop MP4 into /public/videos"
+						})
+					]
+				})
+			}),
+			src && !errored && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "absolute bottom-6 right-6 z-10 flex gap-3",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+					onClick: toggle,
+					"aria-label": playing ? "Pause video" : "Play video",
+					className: "grid h-11 w-11 place-items-center rounded-full glass-dark text-white hover:bg-white/20 transition",
+					children: playing ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Pause, { className: "h-4 w-4" }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Play, { className: "h-4 w-4" })
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+					onClick: toggleMute,
+					"aria-label": muted ? "Unmute" : "Mute",
+					className: "grid h-11 w-11 place-items-center rounded-full glass-dark text-white hover:bg-white/20 transition",
+					children: muted ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(VolumeX, { className: "h-4 w-4" }) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Volume2, { className: "h-4 w-4" })
+				})]
+			})
+		]
+	});
+}
+//#endregion
+export { VideoBlock as t };
