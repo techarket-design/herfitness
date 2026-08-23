@@ -24,7 +24,7 @@ export const Route = createFileRoute("/locations/$location")({
         { title: `Women-Only Gym in ${loc.name} | Her Fitness ${loc.name}` },
         {
           name: "description",
-          content: `Her Fitness ${loc.name} is ${loc.area}'s premium women-only gym. Strength, yoga, dance & HIIT led by certified female coaches. Serving ${loc.serves.slice(0, 3).join(", ")}. Free 3-day trial.`,
+          content: `Her Fitness ${loc.name} is ${loc.area}'s premium women-only gym. Strength, yoga, dance & HIIT led by certified female & male fitness coaches. Serving ${loc.serves.slice(0, 3).join(", ")}. Free 3-day trial.`,
         },
         {
           name: "keywords",

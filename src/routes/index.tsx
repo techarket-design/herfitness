@@ -27,7 +27,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Luxury women-only fitness studio in Delhi NCR. Strength, yoga, dance & HIIT led by certified female coaches. Book your free 3-day trial today.",
+          "Luxury women-only fitness studio in Delhi NCR. Strength, yoga, dance & HIIT led by certified female & male fitness coaches. Book your free 3-day trial today.",
       },
       { property: "og:title", content: "Her Fitness — Delhi NCR's Premium Women-Only Fitness Studio" },
       {
