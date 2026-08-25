@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 import { Quote } from "lucide-react";
-import tr1 from "@/assets/transform-4.jpg";
-import tr2 from "@/assets/transform-5.jpg";
-import tr3 from "@/assets/transform-6.jpg";
+import tr4 from "@/assets/transform-4git .jpg";
+import tr5 from "@/assets/transform-5.jpg";
+import tr6 from "@/assets/transform-6.jpg";
 
 const items = [
-  { img: tr1, name: "Neha, 34", stat: "−14 kg in 6 months", quote: "I finally love the mirror. And the sisterhood here is everything." },
-  { img: tr2, name: "Aisha, 28", stat: "PCOS symptoms reversed", quote: "My cycle normalised in 4 months. Their coaches actually understand hormones." },
-  { img: tr3, name: "Kavya, 41", stat: "Off blood-pressure meds", quote: "Post-partum, I felt invisible. Her Fitness gave me back my body — and my confidence." },
+  { img: tr4, name: "Neha, 34", stat: "−14 kg in 6 months", quote: "I finally love the mirror. And the sisterhood here is everything." },
+  { img: tr5, name: "Aisha, 28", stat: "PCOS symptoms reversed", quote: "My cycle normalised in 4 months. Their coaches actually understand hormones." },
+  { img: tr6, name: "Kavya, 41", stat: "Off blood-pressure meds", quote: "Post-partum, I felt invisible. Her Fitness gave me back my body — and my confidence." },
 ];
 
 export function Transformations() {
