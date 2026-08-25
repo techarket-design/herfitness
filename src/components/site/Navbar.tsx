@@ -9,7 +9,6 @@ const links = [
   { to: "/trainers", hash: undefined, label: "Trainers" },
   { to: "/blogs", hash: undefined, label: "Blogs" },
   { to: "/about", hash: undefined, label: "About" },
-  { to: "/", hash: "transformations", label: "Results" },
   { to: "/", hash: "contact", label: "Contact" },
 ] as const;
 

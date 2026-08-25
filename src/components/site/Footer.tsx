@@ -15,12 +15,18 @@ export function Footer() {
               softer minds, unstoppable sisterhood.
             </p>
             <div className="mt-6 flex gap-3">
-              {[Instagram, Facebook, Youtube].map((Icon, i) => (
+              {[
+                { Icon: Instagram, href: "https://www.instagram.com/herfitnessindia", label: "Instagram" },
+                { Icon: Facebook, href: "#", label: "Facebook" },
+                { Icon: Youtube, href: "#", label: "Youtube" },
+              ].map(({ Icon, href, label }) => (
                 <a
-                  key={i}
-                  href="#"
+                  key={label}
+                  href={href}
+                  target={href !== "#" ? "_blank" : undefined}
+                  rel={href !== "#" ? "noreferrer" : undefined}
                   className="grid h-10 w-10 place-items-center rounded-full border border-background/20 hover:bg-primary hover:border-primary transition-colors"
-                  aria-label="Social link"
+                  aria-label={label}
                 >
                   <Icon className="h-4 w-4" />
                 </a>
@@ -36,7 +42,6 @@ export function Footer() {
                 { l: "Trainers", h: "/trainers" },
                 { l: "Blogs & Journal", h: "/blogs" },
                 { l: "Locations", h: "/locations" },
-                { l: "Transformations", h: "/#transformations" },
                 { l: "Contact", h: "/#contact" },
               ].map((item) => (
                 <li key={item.l}><a href={item.h} className="hover:text-background">{item.l}</a></li>

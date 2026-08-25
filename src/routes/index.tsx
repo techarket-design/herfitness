@@ -8,7 +8,6 @@ import { AnimatedStats } from "@/components/site/AnimatedStats";
 import { ServiceScroller } from "@/components/site/ServiceScroller";
 import { Programs } from "@/components/site/Programs";
 import { Trainers } from "@/components/site/Trainers";
-import { Transformations } from "@/components/site/Transformations";
 import { Branches } from "@/components/site/Branches";
 import { Testimonials } from "@/components/site/Testimonials";
 import { InstagramFeed } from "@/components/site/InstagramFeed";
@@ -60,6 +59,7 @@ export const Route = createFileRoute("/")({
             addressCountry: "IN",
           },
           telephone: "+91-98100-00000",
+          sameAs: ["https://www.instagram.com/herfitnessindia"],
           aggregateRating: {
             "@type": "AggregateRating",
             ratingValue: "4.9",
@@ -82,7 +82,6 @@ function Index() {
         <AnimatedStats />
         <ServiceScroller />
         <Trainers />
-        <Transformations />
         <VideoBlock
           src="/videos/transformations-showcase.mp4"
           eyebrow="Real transformations"
