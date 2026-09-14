@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: light;
+  }
+  body {
+    @apply bg-her-blush text-slate-800 font-sans antialiased selection:bg-her-primary selection:text-white;
+  }
+}
+
+/* Custom Scrollbar for Light Theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #fff4f0;
+}
+::-webkit-scrollbar-thumb {
+  background: #f1b3bc;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e55b6e;
+}
