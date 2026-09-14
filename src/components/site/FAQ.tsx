@@ -3,9 +3,9 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 const faqs = [
   { q: "Is Her Fitness a women-only gym?", a: "Yes. Her Fitness is an exclusive, private sanctuary designed for women members. To provide world-class results, our team includes certified female and male fitness experts, personal trainers, and nutrition specialists." },
 
-  { q: "What if I've never worked out before?", a: "Perfect — most of our members started exactly there. Every program has a beginner track, and your first session includes a private consult with a coach." },
+  { q: "What if I've never worked out before?", a: "Perfect most of our members started exactly there. Every program has a beginner track, and your first session includes a private consult with a coach." },
   { q: "Do you offer trial classes?", a: "Yes. You get a complimentary 3-day trial including one group class, one 1:1 consult and full facility access." },
-  { q: "Can I transfer between branches?", a: "Absolutely. Members can train at any of our 7 women-only Delhi studios — Punjabi Bagh, Rajouri Garden, Paschim Vihar, Janakpuri, Kirti Nagar, Prashant Vihar or Dwarka." },
+  { q: "Can I transfer between branches?", a: "Absolutely. Members can train at any of our 8 women-only Delhi studios Punjabi Bagh, Rajouri Garden, Paschim Vihar, Janakpuri, Kirti Nagar, Prashant Vihar, Vikaspuri and Dwarka." },
   { q: "Do you have programs for PCOS, pre/post-natal or menopause?", a: "Yes. These are our specialities. Our coaches are certified in women's hormonal health and pre/post-natal training." },
   { q: "What are your hours?", a: "All studios are open 6:00 am – 10:00 pm, seven days a week. Personal training slots run from 5:30 am." },
 ];

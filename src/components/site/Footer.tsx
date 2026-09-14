@@ -51,8 +51,8 @@ export function Footer() {
           <div>
             <h4 className="font-display text-lg">Reach us</h4>
             <ul className="mt-4 space-y-3 text-sm text-background/70">
-              <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-primary" /> +91 98100 00000</li>
-              <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-primary" /> hello@herfitness.in</li>
+              <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-primary" /> +91 99900 09580</li>
+              <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-primary" /> joinherfitness@gmail.com </li>
               <li>8 studios · Delhi NCR</li>
             </ul>
           </div>
