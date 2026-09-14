@@ -14,13 +14,15 @@ export function Hero({ onOpenTrialModal }: HeroProps) {
     <section className="relative min-h-[92vh] flex items-center justify-center bg-slate-950 pt-28 pb-16 overflow-hidden">
       {/* Visual Background Layer with Sunset Warm Overlay */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1920&q=80"
-          alt="Her Fitness Empowered Woman"
-          fill
-          className="object-cover opacity-60 filter saturate-125 scale-105"
-          priority
-        />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute w-full h-full object-cover opacity-60 filter saturate-125 scale-105"
+        >
+          <source src="https://cdn.coverr.co/videos/coverr-woman-doing-exercises-with-dumbbells-4690/1080p.mp4" type="video/mp4" />
+        </video>
 
         {/* Sunset Gradient Overlay Matching Reference Image 2 */}
         <div className="absolute inset-0 bg-gradient-to-r from-rose-950/90 via-rose-900/65 to-amber-950/75" />
