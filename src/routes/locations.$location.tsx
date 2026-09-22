@@ -58,7 +58,7 @@ export const Route = createFileRoute("/locations/$location")({
               addressCountry: "IN",
             },
             areaServed: loc.serves,
-            openingHours: "Mo-Su 06:00-22:00",
+            openingHours: "Mo-Sa 07:00-12:30, 17:00-21:00",
             aggregateRating: {
               "@type": "AggregateRating",
               ratingValue: "4.9",

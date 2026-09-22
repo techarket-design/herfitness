@@ -36,7 +36,7 @@ export const TRAINERS: Trainer[] = [
     bio: "Basant dedicatedly guides and alligns all our clients with their fitness goals",
     image: IMAGES.trainers.trainer3,
     instagram: "https://www.instagram.com/herfitnessindia",
-    branches: ["Paschim Vihar", "Janakpuri", "Dwarka"],
+    branches: ["Paschim Vihar", "Janak Puri", "Dwarka"],
   },
   {
     slug: "payal-nayal",
@@ -48,7 +48,7 @@ export const TRAINERS: Trainer[] = [
     bio: "Payal turned our Zumba floor into the most-booked class in Delhi. Her Bollywood mash-ups have a waitlist.",
     image: IMAGES.trainers.trainer2,
     instagram: "https://www.instagram.com/herfitnessindia",
-    branches: ["Prashant Vihar", "Rajouri Garden", "Punjabi Bagh"],
+    branches: ["Rohini", "Rajouri Garden", "Punjabi Bagh"],
   },
   {
     slug: "ripu-daman-kaur",
@@ -83,7 +83,7 @@ export const TRAINERS: Trainer[] = [
     bio: "Sangi's 30-minute boot camps have the highest retention rate in the studio. Small group, huge output.",
     image: IMAGES.trainers.trainer6,
     instagram: "https://www.instagram.com/herfitnessindia",
-    branches: ["Paschim Vihar", "Prashant Vihar"],
+    branches: ["Paschim Vihar", "Rohini"],
   },
   {
     slug: "monti-bassi",
@@ -94,7 +94,7 @@ export const TRAINERS: Trainer[] = [
     years: 10,
     bio: "",
     image: IMAGES.trainers.trainer7,
-    branches: ["Prashant Vihar", "Dwarka"],
+    branches: ["Rohini", "Dwarka"],
   },
   {
     slug: "deepak-deshwal",
@@ -106,7 +106,7 @@ export const TRAINERS: Trainer[] = [
     bio: "",
     image: IMAGES.trainers.trainer8,
     instagram: "https://www.instagram.com/herfitnessindia",
-    branches: ["Janakpuri", "Rajouri Garden"],
+    branches: ["Janak Puri", "Rajouri Garden"],
   },
   {
     slug: "tarun-nath-yogi",
@@ -118,7 +118,7 @@ export const TRAINERS: Trainer[] = [
     bio: "",
     image: IMAGES.trainers.trainer9,
     instagram: "https://www.instagram.com/herfitnessindia",
-    branches: ["Janakpuri", "Rajouri Garden"],
+    branches: ["Janak Puri", "Rajouri Garden"],
   },
 ];
 

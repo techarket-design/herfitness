@@ -6,7 +6,7 @@ const rows = [
   { n: "Ritika S.", t: "Rajouri Garden", q: "Lost 9 kilos, but the real gain is the friendships. I look forward to Mondays now." },
   { n: "Meera K.", t: "Janakpuri", q: "Post-baby recovery here was gentle, expert and empowering. Highly recommend." },
   { n: "Anjali D.", t: "Dwarka", q: "The community, the coaching — it's genuinely a wellness sanctuary." },
-  { n: "Tanya B.", t: "Prashant Vihar", q: "I was intimidated by gyms my whole life. Not anymore. This place changed everything." },
+  { n: "Tanya B.", t: "Rohini", q: "I was intimidated by gyms my whole life. Not anymore. This place changed everything." },
   { n: "Zoya A.", t: "Paschim Vihar", q: "Their PCOS-informed programming is the real deal. My periods are finally regular." },
   { n: "Sneha R.", t: "Kirti Nagar", q: "Kickboxing here made me fall in love with lifting. My arms have never felt stronger." },
   { n: "Neha G.", t: "Punjabi Bagh", q: "Zumba mornings are the highlight of my week. Instructors are pure sunshine." },
@@ -14,7 +14,7 @@ const rows = [
   { n: "Ishita J.", t: "Rajouri Garden", q: "Power yoga transformed my back pain. I finally sleep through the night." },
   { n: "Divya M.", t: "Janakpuri", q: "Boot camp is addictive. 30 minutes and I'm done — but glowing all day." },
   { n: "Aarohi V.", t: "Kirti Nagar", q: "Lower body training gave me the strength to run my first 10K. Incredible coaching." },
-  { n: "Simar K.", t: "Prashant Vihar", q: "As a working mom, the flexibility and childcare-friendly timings are a lifesaver." },
+  { n: "Simar K.", t: "Rohini", q: "As a working mom, the flexibility and childcare-friendly timings are a lifesaver." },
   { n: "Nidhi S.", t: "Paschim Vihar", q: "I've tried five gyms in Delhi. This is the only one that felt safe from day one." },
 ];
 

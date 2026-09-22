@@ -98,6 +98,11 @@ export function LocationPageView({ location: loc }: Props) {
               <a
                 href={`tel:${loc.phone.replace(/\s/g, "")}`}
                 className="inline-flex items-center gap-3 rounded-full glass-dark px-6 py-3 text-sm font-medium hover:bg-white/10 transition"
+                onClick={() => {
+                  if (typeof window !== "undefined" && (window as any).fbq) {
+                    (window as any).fbq("track", "Contact");
+                  }
+                }}
               >
                 <Phone className="h-4 w-4" /> {loc.phone}
               </a>
@@ -266,7 +271,7 @@ export function LocationPageView({ location: loc }: Props) {
               ...loc.faqs,
               {
                 q: `What are the timings of your ${loc.name} studio?`,
-                a: `${loc.hours}. Personal training slots begin as early as 5:30 am on request.`,
+                a: `${loc.hours}. `,
               },
               {
                 q: `Is your ${loc.name} gym truly women-only?`,

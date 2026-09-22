@@ -157,7 +157,7 @@ export const IMAGES = {
       about: aboutPaschimVihar,
       gallery: [galleryPaschimVihar1, galleryPaschimVihar2, galleryPaschimVihar3, galleryPaschimVihar4],
     },
-    janakpuri: {
+    "janak-puri": {
       hero: heroJanakpuri,
       about: aboutJanakpuri,
       gallery: [galleryJanakpuri1, galleryJanakpuri2, galleryJanakpuri3, galleryJanakpuri4],
@@ -167,7 +167,7 @@ export const IMAGES = {
       about: aboutKirtiNagar,
       gallery: [galleryKirtiNagar1, galleryKirtiNagar2, galleryKirtiNagar3, galleryKirtiNagar4],
     },
-    "prashant-vihar": {
+    "rohini": {
       hero: heroPrashantVihar,
       about: aboutPrashantVihar,
       gallery: [galleryPrashantVihar1, galleryPrashantVihar2, galleryPrashantVihar3, galleryPrashantVihar4],

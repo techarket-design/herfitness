@@ -33,6 +33,9 @@ export function ContactForm() {
       if (res.ok) {
         setStatus("success");
         form.reset();
+        if (typeof window !== "undefined" && (window as any).fbq) {
+          (window as any).fbq("track", "Lead");
+        }
       } else {
         setStatus("error");
       }

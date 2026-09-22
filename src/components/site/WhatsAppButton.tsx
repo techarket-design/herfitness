@@ -10,6 +10,11 @@ export function WhatsAppButton() {
       rel="noreferrer"
       aria-label="Chat with us on WhatsApp"
       className="fixed bottom-4 right-4 z-50 group sm:bottom-6 sm:right-6"
+      onClick={() => {
+        if (typeof window !== "undefined" && (window as any).fbq) {
+          (window as any).fbq("trackCustom", "WhatsAppClick");
+        }
+      }}
     >
       <span className="absolute inset-0 -z-10 rounded-full bg-[#25D366] opacity-60 animate-ping" />
       <span className="grid h-12 w-12 sm:h-14 sm:w-14 place-items-center rounded-full bg-[#25D366] text-white shadow-[var(--shadow-luxe)] transition-transform group-hover:scale-110">

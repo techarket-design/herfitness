@@ -59,7 +59,7 @@ const timeline = [
   { y: "2009", t: "The Founding Vision", d: "Two friends walked out of a mixed gym feeling unseen — and opened Her Fitness in Punjabi Bagh: a space designed around how women actually live and train." },
   { y: "2013", t: "West Delhi Expansion", d: "Rajouri Garden and Paschim Vihar join. We become the first women-only chain to serve West Delhi at scale." },
   { y: "2017", t: "The Wellness Pivot", d: "We add power yoga, pilates and PCOS-informed nutrition — treating fitness as an ecosystem, not just a workout." },
-  { y: "2021", t: "Eight Studios Strong", d: "Janakpuri, Vikas Puri, Kirti Nagar, Prashant Vihar and Dwarka open. Over 10,000 women call Her Fitness home." },
+  { y: "2021", t: "Eight Studios Strong", d: "Janak Puri, Vikas Puri, Kirti Nagar, Rohini and Dwarka open. Over 10,000 women call Her Fitness home." },
   { y: "Today", t: "17 Years of Sisterhood", d: "Every day, women walk in unsure — and walk out unstoppable. That's the whole point, and it always has been." },
 ];
 

@@ -17,7 +17,7 @@ export const Route = createFileRoute("/locations/")({
       {
         name: "description",
         content:
-          "Her Fitness runs 8 premium women-only gyms across West, North-West & South-West Delhi — Punjabi Bagh, Rajouri Garden, Paschim Vihar, Janakpuri, Vikas Puri, Kirti Nagar, Prashant Vihar & Dwarka. Find your studio.",
+          "Her Fitness runs 8 premium women-only gyms across West, North-West & South-West Delhi — Punjabi Bagh, Rajouri Garden, Paschim Vihar, Janak Puri, Vikas Puri, Kirti Nagar, Rohini & Dwarka. Find your studio.",
       },
       { property: "og:title", content: "Her Fitness — All Delhi Locations" },
       {

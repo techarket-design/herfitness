@@ -16,9 +16,9 @@ const BRANCHES = [
   "Punjabi Bagh",
   "Rajouri Garden",
   "Paschim Vihar",
-  "Janakpuri",
+  "Janak Puri",
   "Kirti Nagar",
-  "Prashant Vihar",
+  "Rohini",
   "Dwarka",
 ];
 
