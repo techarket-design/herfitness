@@ -77,7 +77,7 @@ function ServicesIndex() {
       </section>
 
       <VideoBlock
-        src="/videos/services-showcase.mp4"
+        youtubeId="a6vPnyQ5kwE"
         eyebrow="Inside the studio"
         title={<>Real classes. <em className="text-gradient-rose">Real women.</em></>}
         copy="A glimpse into a typical week at Her Fitness — no filters, no staged shots."

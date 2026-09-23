@@ -6,6 +6,8 @@ import { IMAGES } from "@/lib/images";
 type Props = {
   /** Path under /public — drop your MP4 there. Falls back to poster on error. */
   src?: string;
+  /** YouTube video ID for embedded video */
+  youtubeId?: string;
   /** Poster/fallback image. Defaults to hero. */
   poster?: string;
   eyebrow?: string;
@@ -28,6 +30,7 @@ const heights = {
  */
 export function VideoBlock({
   src,
+  youtubeId,
   poster = IMAGES.hero,
   eyebrow,
   title,
@@ -39,7 +42,7 @@ export function VideoBlock({
   const videoRef = useRef<HTMLVideoElement>(null);
   const [playing, setPlaying] = useState(true);
   const [muted, setMuted] = useState(true);
-  const [errored, setErrored] = useState(!src);
+  const [errored, setErrored] = useState(!src && !youtubeId);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -72,7 +75,16 @@ export function VideoBlock({
       className={`relative w-full overflow-hidden bg-foreground ${heights[height]}`}
     >
       <motion.div style={{ y, scale }} className="absolute inset-0">
-        {!errored && src ? (
+        {!errored && youtubeId ? (
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <iframe
+              className="absolute left-1/2 top-1/2 h-[56.25vw] min-h-[100vh] min-w-[177.77vh] w-[100vw] -translate-x-1/2 -translate-y-1/2 object-cover"
+              src={`https://www.youtube.com/embed/${youtubeId}?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&rel=0&playsinline=1&playlist=${youtubeId}&modestbranding=1`}
+              allow="autoplay; encrypted-media"
+              frameBorder="0"
+            />
+          </div>
+        ) : !errored && src ? (
           <video
             ref={videoRef}
             className="h-full w-full object-cover"

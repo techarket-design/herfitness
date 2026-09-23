@@ -211,7 +211,6 @@ export function LocationPageView({ location: loc }: Props) {
 
       {/* ================= STUDIO VIDEO ================= */}
       <VideoBlock
-        src={`/videos/location-${loc.slug}.mp4`}
         eyebrow={`${loc.name} Studio Tour`}
         title={
           <>

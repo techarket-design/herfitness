@@ -48,27 +48,14 @@ export function VideoShowcase() {
       className="relative h-[110vh] min-h-[640px] w-full overflow-hidden bg-foreground"
     >
       <motion.div style={{ y, scale }} className="absolute inset-0">
-        {!errored ? (
-          <video
-            ref={videoRef}
-            className="h-full w-full object-cover"
-            autoPlay
-            muted
-            loop
-            playsInline
-            poster={hero}
-            onError={() => setErrored(true)}
-          >
-            <source src={VIDEO_SRC} type="video/mp4" />
-            <source src={FALLBACK_SRC} type="video/mp4" />
-          </video>
-        ) : (
-          <img
-            src={hero}
-            alt="Her Fitness studio"
-            className="h-full w-full object-cover"
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <iframe
+            className="absolute left-1/2 top-1/2 h-[56.25vw] min-h-[100vh] min-w-[177.77vh] w-[100vw] -translate-x-1/2 -translate-y-1/2 object-cover"
+            src="https://www.youtube.com/embed/MlhVXOtwA1k?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&rel=0&playsinline=1&playlist=MlhVXOtwA1k&modestbranding=1"
+            allow="autoplay; encrypted-media"
+            frameBorder="0"
           />
-        )}
+        </div>
         <div
           className="absolute inset-0"
           style={{
@@ -117,23 +104,7 @@ export function VideoShowcase() {
         </motion.div>
       </div>
 
-      {/* Video controls */}
-      <div className="absolute bottom-8 right-8 z-10 flex gap-3">
-        <button
-          onClick={toggle}
-          aria-label={playing ? "Pause video" : "Play video"}
-          className="grid h-11 w-11 place-items-center rounded-full glass-dark text-white hover:bg-white/20 transition"
-        >
-          {playing ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4" />}
-        </button>
-        <button
-          onClick={toggleMute}
-          aria-label={muted ? "Unmute video" : "Mute video"}
-          className="grid h-11 w-11 place-items-center rounded-full glass-dark text-white hover:bg-white/20 transition"
-        >
-          {muted ? <VolumeX className="h-4 w-4" /> : <Volume2 className="h-4 w-4" />}
-        </button>
-      </div>
+
     </section>
   );
 }
